@@ -41,7 +41,10 @@ cd backend
 pip install -r requirement.txt
 ```
 Run the Flask backend:
+
+```sh
 python app.py
+```
 
 Test the API with cURL
 
@@ -67,7 +70,7 @@ Expected Response:
 {
   "message": "Doctor added successfully"
 }
-
+```
 
 
 2. Set up the frontend
