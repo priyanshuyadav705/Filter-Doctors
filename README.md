@@ -25,11 +25,12 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/priyanshuyadav705/Filter-Doctors.git
-cd Filter-Doctors
+
 
 Create Virtual Environment:
 
 ```sh
+cd Filter-Doctors
 python3 -m venv .venv
 source .venv/bin/activate
 ```
@@ -46,7 +47,11 @@ python app.py
 Open a new terminal tab:
 
 ```sh
+cd Filter-Doctors
+python3 -m venv .venv
+source .venv/bin/activate
 cd frontend
+npm install axios
 npm install
 npm run dev
 ```
