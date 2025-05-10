@@ -43,6 +43,33 @@ pip install -r requirement.txt
 Run the Flask backend:
 python app.py
 
+Test the API with cURL
+
+Once app.py is running, you can use curl to add a new doctor to the database :
+Open a new terminal tab:
+
+```sh
+cd Filter-Doctors
+python3 -m venv .venv
+source .venv/bin/activate
+curl -X POST http://127.0.0.1:5000/api/doctors/add \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Dr. Alice Sharma",
+    "gender": "female",
+    "fee": 500,
+    "experience": 10,
+    "age": 40,
+    "specialization": "General Physician",
+    "language": "English, Hindi"
+  }'
+Expected Response:
+{
+  "message": "Doctor added successfully"
+}
+
+
+
 2. Set up the frontend
 Open a new terminal tab:
 
@@ -66,3 +93,4 @@ npm run dev
 ## Author
 
 👤 **Priyanshu yadav**
+
